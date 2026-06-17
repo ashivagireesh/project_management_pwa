@@ -18,6 +18,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VITE_APPS_SCRIPT_URL: https://script.google.com/macros/s/AKfycbyTALWSPVlF82dx-Rzp3CQ0E1-rUmELfooHQ0cvKrs6MJMNDpTReqzQ8mroGfRLAXXp8w/exec
+      VITE_APP_VERSION: 2026-06-17-github-pages-live
     steps:
       - name: Checkout
         uses: actions/checkout@v4
